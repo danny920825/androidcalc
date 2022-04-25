@@ -1,38 +1,93 @@
-.App {
-  text-align: center;
+*{
+    margin:0;
+    padding:0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+    width: 80%;
+    margin: auto;
+    background-color: #dedede;
+    height: 100vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.calc{
+    position: relative;
+    width: 30%;
+    margin-left: 35%;
+    background-color: #181818;
+    height: 80vh;
+    border-radius: 5%;
+    display: inline-block;
+    margin-top: 5%;
+
+    /* display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 1px;
+    grid-row-gap: 1px; */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.calc button{
+	border: none;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
 }
 
-.App-link {
-  color: #61dafb;
+
+.input, .input:active, .input:focus {
+    width: 99.5%;
+    transform: translateY(450%);
+    color: #181818;
+    background-color: transparent;
+    text-align: right;
+    font-size: 39px;
+    border: none;
+    color: #dedede;
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.hr{
+    width: 99.5%;
+    margin-top: 55%;
+    display:inline-block;
+    border: 2px solid white;
+}
+.l1, .l2, .l3, .l4, .l5{
+
+    float: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2%;
+    padding: 1px;
+    width: 100%;
+}
+
+
+.AC, .DEL, .PORCENT, .DIVIDER, .MULT, .MENOS, .MAS, .IGUAL{
+    width: 23%;
+    padding: 15px 0;
+    background-color: orange;
+    margin: auto;
+    float: left;
+    text-align: center;
+    border-radius: 5%;
+}
+
+.cero, .point, .uno, .dos,.tres,.cuatro, .cinco, .seis, .siete, .ocho, .nueve{
+    width: 23%;
+    padding: 15px 0;
+    background-color: white;
+    margin: auto;
+    float: left;
+    text-align: center;
+    border-radius: 5%;
+}
+.EMPTY{
+    width: 23%;
+    padding: 15px 0;
+    background-color: #181818;
+    margin: auto;
+    float: left;
+    text-align: center;
 }
